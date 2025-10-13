@@ -1,4 +1,4 @@
-module public
+module github.com/Addiction-fei/public
 
 go 1.24.6
 
