@@ -5,16 +5,16 @@ import (
 	"github.com/smartwalle/alipay/v3"
 )
 
-func AliPay(privateKey, appId, orderSn, totalPrice string) string {
+func AliPay(subject, returnURL, notifyURL, privateKey, appId, orderSn, totalPrice string) string {
 	var client, err = alipay.New(appId, privateKey, false)
 	if err != nil {
 		fmt.Println(err)
 		return ""
 	}
 	var p = alipay.TradeWapPay{}
-	p.NotifyURL = "http://12b1981f.r17.cpolar.top/v1/alipay/notify"
-	p.ReturnURL = "http://12b1981f.r17.cpolar.top/v1/orders/return"
-	p.Subject = "闪送订单支付"
+	p.NotifyURL = notifyURL
+	p.ReturnURL = returnURL
+	p.Subject = subject
 	p.OutTradeNo = orderSn
 	p.TotalAmount = totalPrice
 	p.ProductCode = "QUICK_WAP_WAY"

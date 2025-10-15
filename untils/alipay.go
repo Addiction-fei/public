@@ -8,7 +8,14 @@ type Pay interface {
 type AliPay struct {
 }
 
-func (a *AliPay) AliPay(privateKey, appId, orderSn, totalPrice string) string {
-	pay := pkg.AliPay(privateKey, appId, orderSn, totalPrice)
+func (a *AliPay) AliPay(subject, returnURL, notifyURL, privateKey, appId, orderSn, totalPrice string) string {
+	pay := pkg.AliPay(
+		privateKey,
+		appId,
+		orderSn,
+		totalPrice,
+		subject,
+		returnURL,
+		notifyURL)
 	return pay
 }
