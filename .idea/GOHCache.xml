@@ -1,17 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="GoORMHelperCache">
+    <option name="schemaMapping">
+      <map>
+        <entry key="AliPay">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/untils/alipay.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Config">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/log.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RabbitMQ">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/untils/rabbitmq.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="SendSms">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/untils/sms.go" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="scannedPathMapping">
       <map>
+        <entry key="file://$PROJECT_DIR$/pkg/alipay.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1760496506533" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/log.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1760322875165" />
+              <option name="schema">
+                <list>
+                  <option value="Config" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/pkg/sms.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1760320428342" />
+              <option name="lastModified" value="1760495210911" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/untils/alipay.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1760496506526" />
+              <option name="schema">
+                <list>
+                  <option value="AliPay" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/untils/rabbitmq.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1760496506541" />
+              <option name="schema">
+                <list>
+                  <option value="RabbitMQ" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/untils/sms.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1760495210719" />
+              <option name="schema">
+                <list>
+                  <option value="SendSms" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
       </map>
     </option>
-    <option name="lastTimeChecked" value="1760272303986" />
+    <option name="tableStructMapping">
+      <map>
+        <entry key="ali_pay" value="AliPay" />
+        <entry key="config" value="Config" />
+        <entry key="rabbit_mq" value="RabbitMQ" />
+        <entry key="send_sms" value="SendSms" />
+      </map>
+    </option>
+    <option name="lastTimeChecked" value="1760494108803" />
   </component>
 </project>
