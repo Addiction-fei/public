@@ -8,8 +8,8 @@ type Sms interface {
 type SendSms struct {
 }
 
-func (s *SendSms) SendSms(phone string, code string) error {
-	sms, err := pkg.SendSms(phone, code)
+func (s *SendSms) SendSms(signName, templateCode, phone, code string) error {
+	sms, err := pkg.SendSms(signName, templateCode, phone, code)
 	if err != nil {
 
 		return err

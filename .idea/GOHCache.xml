@@ -38,7 +38,7 @@
         <entry key="file://$PROJECT_DIR$/pkg/alipay.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1760496506533" />
+              <option name="lastModified" value="1760514367826" />
             </ScannedPath>
           </value>
         </entry>
@@ -54,17 +54,24 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/md5.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1757729360836" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/pkg/sms.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1760495210911" />
+              <option name="lastModified" value="1760514367761" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/untils/alipay.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1760496506526" />
+              <option name="lastModified" value="1760514395138" />
               <option name="schema">
                 <list>
                   <option value="AliPay" />
@@ -76,7 +83,7 @@
         <entry key="file://$PROJECT_DIR$/untils/rabbitmq.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1760496506541" />
+              <option name="lastModified" value="1760514482710" />
               <option name="schema">
                 <list>
                   <option value="RabbitMQ" />
@@ -88,12 +95,19 @@
         <entry key="file://$PROJECT_DIR$/untils/sms.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1760495210719" />
+              <option name="lastModified" value="1760514395146" />
               <option name="schema">
                 <list>
                   <option value="SendSms" />
                 </list>
               </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/untils/validator.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1757729360844" />
             </ScannedPath>
           </value>
         </entry>

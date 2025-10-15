@@ -22,8 +22,8 @@ type RabbitMQ struct {
 }
 
 // 创建结构体实例
-func NewRabbitMQ(queueName string, exchange string, key string) *RabbitMQ {
-	return &RabbitMQ{QueueName: queueName, Exchange: exchange, Key: key, Mqurl: config.MQURL}
+func NewRabbitMQ(queueName string, exchange string, key string, mqurl string) *RabbitMQ {
+	return &RabbitMQ{QueueName: queueName, Exchange: exchange, Key: key, Mqurl: mqurl}
 }
 
 // 断开channel 和 connection
@@ -43,7 +43,7 @@ func (r *RabbitMQ) failOnErr(err error, message string) {
 // 创建简单模式下RabbitMQ实例
 func NewRabbitMQSimple(queueName string) *RabbitMQ {
 	//创建RabbitMQ实例
-	rabbitmq := NewRabbitMQ(queueName, "", "")
+	rabbitmq := NewRabbitMQ(queueName, "", "", "")
 	var err error
 	//获取connection
 	rabbitmq.conn, err = amqp.Dial(rabbitmq.Mqurl)

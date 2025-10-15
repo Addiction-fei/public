@@ -32,15 +32,15 @@ func CreateClient() (_result *dysmsapi20170525.Client, _err error) {
 	return _result, _err
 }
 
-func SendSms(phone string, code string) (resp *dysmsapi20170525.SendSmsResponse, _err error) {
+func SendSms(signName, templateCode, phone, code string) (resp *dysmsapi20170525.SendSmsResponse, _err error) {
 	client, _err := CreateClient()
 	if _err != nil {
 		return resp, _err
 	}
 
 	sendSmsRequest := &dysmsapi20170525.SendSmsRequest{
-		SignName:      tea.String(config.SignName),
-		TemplateCode:  tea.String(config.TemplateCode),
+		SignName:      tea.String(signName),
+		TemplateCode:  tea.String(templateCode),
 		PhoneNumbers:  tea.String(phone),
 		TemplateParam: tea.String("{\"code\":\"" + code + "\"}"),
 	}

@@ -5,10 +5,8 @@ import (
 	"github.com/smartwalle/alipay/v3"
 )
 
-func AliPay(orderSn, totalPrice string) string {
-	data := config.AppConf.Alipay
-	var privateKey = data.PrivateKey // 必须，上一步中使用 RSA签名验签工具 生成的私钥
-	var client, err = alipay.New(data.AppId, privateKey, false)
+func AliPay(privateKey, appId, orderSn, totalPrice string) string {
+	var client, err = alipay.New(appId, privateKey, false)
 	if err != nil {
 		fmt.Println(err)
 		return ""
